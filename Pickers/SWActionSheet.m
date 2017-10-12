@@ -148,7 +148,11 @@ static const enum UIViewAnimationOptions options = UIViewAnimationOptionCurveEas
     // Present actions
     void (^animations)() = ^{
         self.center = toPoint;
-        self.backgroundColor = [UIColor colorWithWhite:0.f alpha:0.5f];
+        
+        if (self.dismissZoneMaskVisible)
+        {
+            self.backgroundColor = [UIColor colorWithWhite:0.f alpha:0.5f];
+        }
     };
     // Present sheet
     if (animated)

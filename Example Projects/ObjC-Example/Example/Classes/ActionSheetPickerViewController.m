@@ -334,6 +334,8 @@
         NSLog(@"picker = %@", stringPicker);
     }                                                                         origin:(UIView *) sender];
 
+    picker.dismissZoneMaskVisible = false;
+    
     UIButton *okButton = [UIButton buttonWithType:UIButtonTypeCustom];
     [okButton setImage:[UIImage imageNamed:@"ok.png"] forState:UIControlStateNormal];
     [okButton setFrame:CGRectMake(0, 0, 32, 32)];

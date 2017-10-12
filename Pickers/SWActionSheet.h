@@ -8,6 +8,7 @@
 
 @interface SWActionSheet : UIView
 @property(nonatomic, strong) UIView *bgView;
+@property(nonatomic, assign) BOOL dismissZoneMaskVisible;
 
 - (void)dismissWithClickedButtonIndex:(int)i animated:(BOOL)animated;
 
